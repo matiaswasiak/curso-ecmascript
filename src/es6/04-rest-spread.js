@@ -1,3 +1,5 @@
+// What is destructuring? It is a way to extract data from arrays, objects, maps and sets.
+
 // Arrays destructuring
 
 let fruits = ["apple", "banana", "kiwi", "orange", "watermelon"];
