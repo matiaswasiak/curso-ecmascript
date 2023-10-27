@@ -8,6 +8,14 @@ const anotherFunction = () => {
   });
 };
 
+// const anotherFunction = () => {
+//   return new Promise((resolve) => {
+//     if (true) {
+//       resolve("Hey!");
+//     }
+//   });
+// };
+
 anotherFunction()
   .then((response) => console.log(response))
   .catch((error) => console.log(error))
