@@ -1,28 +1,33 @@
 class User {
-  // Constructor
+  #age; // private field
+
   constructor(name, age) {
     this.name = name;
-    this.age = age;
+    this.#age = age;
   }
 
-  // Methods
-  speak() {
+  static speak() {
     return "Hello";
   }
 
   greeting() {
-    return `${this.speak()}, my name is ${this.name}`;
+    return `${User.speak()}, my name is ${this.name}`;
   }
 
-  get getAge() {
-    return this.age;
+  get age() {
+    return this.#age;
   }
 
-  set setAge(age) {
-    this.age = age;
+  set age(age) {
+    this.#age = age;
   }
 }
 
 const dung3on = new User("dung3on", 22);
-console.log(dung3on.greeting());
-console.log(dung3on.getAge());
+
+function testUser(user) {
+  console.log(user.greeting());
+  console.log(user.age);
+}
+
+testUser(dung3on);
