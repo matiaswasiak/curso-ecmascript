@@ -1,13 +1,9 @@
-function square(x) {
-  return x * x;
-}
+// Use arrow functions consistently
+const square = (x) => x * x;
 
-const squareArrow = (x) => {
-  return x * x;
-};
+const squareArrow = (x) => x * x;
 
-const getName = (name) => {
-  return name.split(" ")[0];
-};
+// Provide a more descriptive function name
+const getFirstName = (name) => name.split(" ")[0];
 
 const squareArrow2 = (x) => x * x;
